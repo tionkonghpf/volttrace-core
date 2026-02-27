@@ -41,21 +41,21 @@ To initialize the VoltTrace engine in a local sandbox environment:
 
 ### 1. Matrix Initialization
 ```bash
-git clone https://github.com/your-username/volttrace-core.git
+git clone [https://github.com/tiankonghpf/volttrace-core.git](https://github.com/tiankonghpf/volttrace-core.git)
 cd volttrace-core
 npm install
-2. Ledger Instantiation
+###2. Ledger Instantiation
 Create the physical bounding parameters and seed the cryptographic actors:
 npm run db:push
 npm run db:seed
-3. Dual-Node Ignition
+###3. Dual-Node Ignition
 Boot both the physics-bound validation compute node and the client matrix concurrently:
 # Terminal 1: Ignite the Compute Node (Validation Gateway)
 npm run dev:backend
 
 # Terminal 2: Ignite the Client Matrix (Visual Interface)
 npm run dev:frontend
-4. Access the Secure Dashboards
+###4. Access the Secure Dashboards
 Navigate to http://localhost:3000/login to access the localized matrix.
 Authorized Test Identities:
 
@@ -64,7 +64,7 @@ Assembler Terminal: factory / 123456 (Full assembly & anchoring privileges)
 Miner Terminal: miner / 123456 (Isolated upstream visibility)
 
 EU Regulator: admin / admin (Unrestricted audit mode)
-🔬 Zero-Trust Audit Protocol
+###🔬 Zero-Trust Audit Protocol
 We challenge you to break the engine's causality:
 
 The Physics Violation: Log in as factory and attempt to inject a payload with 99999 kWh capacity. Watch the compute node instantly intercept and terminate the transaction with a [PHYSICS_VIOLATION].
